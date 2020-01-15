@@ -165,7 +165,7 @@
             }           
         },
         mounted: function(){
-            this.getMyTeams1()
+            this.getMyItems1()
         }
     }
 </script>

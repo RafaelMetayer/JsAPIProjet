@@ -138,8 +138,12 @@
                     .catch(() => {
                     this.tournois = "Pas de tournoi";
                 })
-            }           
+            }         
+        },
+        mounted: function(){
+            this.getMyTournaments1()
         }
+        
     }
 </script>
 

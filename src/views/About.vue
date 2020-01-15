@@ -17,6 +17,9 @@
         </p>
         Lien de l'api : <v-btn href="https://pandascore.co/">API</v-btn> <br>
         Lien de la documentation : <v-btn href="https://developers.pandascore.co/doc/#tag/LoL-champions">Documentation</v-btn>
+        <p>
+          Site créé par Dravigny Marie et Rafaël METAYER
+        </p>
       </v-flex>
     </v-layout>
   </v-container>

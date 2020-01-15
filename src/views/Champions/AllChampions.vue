@@ -128,6 +128,9 @@
                     this.champions = "Pas de champions";
                 })
             }           
+        },
+        mounted: function(){
+            this.getMyChampions1()
         }
     }
 </script>
