@@ -20,6 +20,7 @@
         </v-container>
         <v-container>
             <div class="tournois" v-for="tournoi in tournois" :key="tournoi.id">
+                <h2>Tournoi :</h2>
                 <v-row>
                     <v-col>
                         <strong>{{ tournoi.name }}</strong> <br>
@@ -41,9 +42,16 @@
                         </div>
                    </v-col>  
                 </v-row>
+                <h3>Les equipes participantes : </h3> <br>
                 <v-row>
-                    
+                    <div class="tournois" v-for="team in tournoi.teams" :key="team.id">
+                        <v-col>
+                            <img  v-bind:src="team.image_url" alt="" height="80" width="auto" srcset=""> <br>                       
+                            <strong>{{team.acronym}}</strong>
+                        </v-col>
+                    </div>
                 </v-row>
+                <br>
             </div> 
         </v-container>
         

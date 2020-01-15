@@ -163,6 +163,9 @@
                     this.items = "Pas d'items";
                 })
             }           
+        },
+        mounted: function(){
+            this.getMyTeams1()
         }
     }
 </script>
