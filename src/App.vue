@@ -1,32 +1,34 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <v-app id="inspire">
+    <div>
+      <v-toolbar>
+        <v-toolbar-title>LOL ESport</v-toolbar-title>
+
+        <v-spacer></v-spacer>
+
+        <v-toolbar-items>
+          <v-btn text to="/">Home</v-btn>
+          <v-btn text to="/tournois">Les tournois</v-btn>
+          <v-btn text to="/equipes">Les equipes</v-btn>
+          <v-btn text to="/champions">Les champions</v-btn>
+          <v-btn text to="/items">Les items</v-btn>
+          <v-btn text to="/about">A propos</v-btn>
+        </v-toolbar-items>
+      </v-toolbar>
     </div>
-    <router-view/>
-  </div>
+    <v-content>
+      <router-view></router-view>
+    </v-content>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+<script>
+  export default {
+    name: "App",
+    data() {
+      return {
+        drawer: false // Hide mobile side menu by default
+      };
+    }
+  };
+</script>
